@@ -34,7 +34,6 @@ game_started = False
 def guess():
     global stage
     global blanks
-    global stages
     global game_started
 
     if not game_started:
@@ -75,7 +74,6 @@ def check(pick):
 def check_status(pick):
     global blanks
     global stage
-    global stages
     if pick not in guessed and pick not in blanks:
         guessed.append(pick)
         stage -= 1
