@@ -42,6 +42,7 @@ def cesar(message, shift, todo):
 
 
 def start():
+    global again
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
     shift_num = int(input("Type the shift number:\n"))

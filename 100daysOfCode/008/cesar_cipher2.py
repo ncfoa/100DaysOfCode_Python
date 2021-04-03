@@ -57,8 +57,26 @@ def cesar(message, shift, todo):
         print(f'Your {direction}d message is {"".join(decrypted)}')
 
 
+direction = ""
+again = ""
+
+
+def start():
+    global again
+    global direction
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift_num = int(input("Type the shift number:\n"))
+    shift_num = shift_num % 26
+    cesar(text, shift_num, direction)
+    again = input("Would you like to try again? ('y'/'N')\n").lower()
+
+
 logo()
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift_num = int(input("Type the shift number:\n"))
-cesar(text, shift_num, direction)
+start()
+
+while again == "y":
+    start()
+else:
+    print("Goodbye...")
+    exit(0)
