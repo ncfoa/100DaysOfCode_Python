@@ -1,9 +1,14 @@
 #Black Jack Game
 import random
 import subprocess
+# I am not using the repl.it online environment. For a Mac, you need to invoke the subprocess to properly clear
+# the screen and all scroll-back. While this works in the terminal, it does not work properly in the Pycharm IDE but
+# does not affect running of the code. I have not tested on Windows.
+
 
 def clear():
     subprocess.call(['tput', 'reset'])
+
 
 def logo():
     art = """
@@ -17,6 +22,7 @@ def logo():
       `------'                           |__/           
 """
     print(art)
+
 
 def deal_card():
     cards = ["A", "2","3","4","5","6","7","8","9","J","Q","K"]
