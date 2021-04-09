@@ -1,6 +1,5 @@
-# Does the money transactions for the coffee machine.
-
 class MoneyMachine:
+
     CURRENCY = "$"
 
     COIN_VALUES = {
