@@ -1,5 +1,5 @@
 .idea
 */__pycache__/*
 __pycache__/
-non_course_related/.env
+*/.env
 .DS_Store
