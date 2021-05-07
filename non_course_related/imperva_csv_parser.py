@@ -99,7 +99,7 @@ def parse_data(top, owners, ip_sorted):
 
 def write_file(csv):
     print("### WRITING TO OUTPUT FILE ###")
-    now = str(dt.now().strftime("%Y_%m_%d_$H$M$S"))
+    now = str(dt.now().strftime("%Y_%m_%d_%H%M%S"))
     new_file = f"./{now}.output.csv"
     column_headers_written = False
     total_unique_blocks_written = False
