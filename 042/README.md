@@ -8,17 +8,11 @@ While it's not Python, it is coding. I'm hoping for Python
 associated with HTML in the not too distant future.
 
 ####Course day covers: 
-Basic HTML boilerplate for html5
+hmtl forms `<form></form>`
 
-Formatting with `<strong>/</strong>` and `<em></em>` over `<b></b>` and `<i></i>`
+html tables `<table><tr><td></td></tr></table>`
 
-Ordered/Unordered lists`<ul><li></li></ul>` and `<ol><li></li></ol>`
 
-Image Tags
-`<img src="" alt="" />` 
-
-Anchor Tags
-`<a href="" alt="">`
 
 ###For these exercises I am using:
  [Visual Studio Code](https://code.visualstudio.com/) as my IDE. 
