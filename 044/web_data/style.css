@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightsteelblue;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+header div {
+  text-align: center;
+  margin: 0;
+  /* color: blanchedalmond; */
+}
+header h1 {
+  font-family: "Dancing Script";
+  font-size: 3em;
+  display: block;
+  margin: 0;
+  padding-top: 15px;
+  color: blanchedalmond;
+}
+
+header p {
+  font-family: "Dancing Script";
+  font-size: 2em;
+  display: block;
+  padding: 5px;
+  color: steelblue;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+header a:hover {
+  color: blanchedalmond;
+}
+/* header img {
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px black solid;
+} */
+
+hr {
+  width: 90vw;
+  height: 1.5px;
+  background-color: blanchedalmond;
+}
+
+.profile {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+.profile img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* .profile p {
+  width: 400px;
+} */
+
+h1 {
+  color: blanchedalmond;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: steelblue;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: steelblue;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+.fab {
+  color: #000;
+}
+
+.middle-container {
+  margin: 100px 0;
+  display: inline-block;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.btn {
+  background: steelblue;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: blanchedalmond;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: blanchedalmond;
+  color: steelblue;
+  text-decoration: none;
+}
+
+.bottom-container {
+  color: black;
+  padding: 50px 0 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+span a {
+  text-decoration: none;
+}
+.fab {
+  color: steelblue;
+}
