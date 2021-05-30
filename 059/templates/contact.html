@@ -4,21 +4,26 @@
   <body>
     <header
       class="masthead"
-      style="background-image: url('./static/assets/img/contact-bg.jpg')"
+      style="background-image: url('static/img/contact-bg.jpg')"
     >
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
+              {% if msg_sent: %}
+              <h1>Successfully sent your message</h1>
+              {% else: %}
               <h1>Contact Me</h1>
+              {% endif %}
               <span class="subheading">Have questions? I have answers.</span>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- Main Content-->
+
+    <!-- Main Content -->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -26,18 +31,25 @@
             Want to get in touch? Fill out the form below to send me a message
             and I will get back to you as soon as possible!
           </p>
-          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work.-->
-          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address!-->
-          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally!-->
-          <form id="contactForm" name="sentMessage" novalidate>
+          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+          <form
+            name="sentMessage"
+            id="contactForm"
+            action="{{ url_for('contact') }}"
+            method="post"
+            novalidate
+          >
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
                 <input
-                  class="form-control"
-                  id="name"
                   type="text"
+                  name="name"
+                  class="form-control"
                   placeholder="Name"
+                  id="name"
                   required
                   data-validation-required-message="Please enter your name."
                 />
@@ -48,10 +60,11 @@
               <div class="form-group floating-label-form-group controls">
                 <label>Email Address</label>
                 <input
-                  class="form-control"
-                  id="email"
                   type="email"
+                  name="email"
+                  class="form-control"
                   placeholder="Email Address"
+                  id="email"
                   required
                   data-validation-required-message="Please enter your email address."
                 />
@@ -64,10 +77,11 @@
               >
                 <label>Phone Number</label>
                 <input
-                  class="form-control"
-                  id="phone"
                   type="tel"
+                  name="phone"
+                  class="form-control"
                   placeholder="Phone Number"
+                  id="phone"
                   required
                   data-validation-required-message="Please enter your phone number."
                 />
@@ -78,10 +92,11 @@
               <div class="form-group floating-label-form-group controls">
                 <label>Message</label>
                 <textarea
-                  class="form-control"
-                  id="message"
                   rows="5"
+                  name="message"
+                  class="form-control"
                   placeholder="Message"
+                  id="message"
                   required
                   data-validation-required-message="Please enter a message."
                 ></textarea>
@@ -91,9 +106,9 @@
             <br />
             <div id="success"></div>
             <button
+              type="submit"
               class="btn btn-primary"
               id="sendMessageButton"
-              type="submit"
             >
               Send
             </button>
@@ -101,6 +116,7 @@
         </div>
       </div>
     </div>
+
     <hr />
     <!-- Footer-->
     {% include "footer.html" %}
