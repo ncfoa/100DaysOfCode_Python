@@ -1,4 +1,4 @@
-# AY_100DaysOfCode_Udemy
+# 100DaysOfCode_Udemy course by Angela Yu from London App Brewery
 
 Just brushing up on my Python coding...
 
@@ -6,10 +6,8 @@ Companion work that follows Angela Yu's Python 100 days of code course on Udemy.
 
 https://www.udemy.com/course/100-days-of-code/
 
-I am utilizing the Pycharm IDE with Python 3.8 on my local machine (Macbook Pro).
+I am utilizing the Pycharm IDE with Python 3.8 on my local machine (Macbook Pro). Some courses required modifying HTML and that just doesn't feel right in Pycharm so I did use VSCode for that portion. 
 
-Pycharm:
-https://www.jetbrains.com/pycharm/download/#section=mac
+[Pycharm Download](https://www.jetbrains.com/pycharm/download/#section=mac)
 
-Python:
-https://www.python.org/downloads/
+[Python3 Download](https://www.python.org/downloads/)
