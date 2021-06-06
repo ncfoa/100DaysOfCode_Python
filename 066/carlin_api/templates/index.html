@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Carlin Quote API</title>
+  </head>
+  <body>
+    <h1>Welcome to my George Carlin Quotes API</h1>
+    <p>
+      I built this api as part of a course on Udemy where the task was to create
+      a RESTful API. I didn't want to do the "Cafe" database that the instructor
+      was using so I built my own. Enjoy!
+    </p>
+    <br />
+    <hr />
+    <br />
+    <h3>GET</h3>
+    <code>http://localhost:5000/quote</code>
+    <p>
+      Make a standard GET request to the /quote endpoint to get a random quote.
+    </p>
+    <br />
+    <hr />
+    <br />
+    <h3>POST</h3>
+    <code>http://localhost:5000/new?quote=this is new quote</code>
+    <p>
+      Make a POST request to the /new endpoint with a parameter of "quote" and
+      your quote as the data.
+    </p>
+    <br />
+    <hr />
+    <br />
+    <h3>PUT</h3>
+    <code>http://localhost:5000/edit?id=165&quote=this is an edited quote</code>
+    <p>
+      Make a PUT request to the /edit endpoint with the id and edited quote in
+      the parameters
+    </p>
+    <br />
+    <hr />
+    <br />
+    <h3>Delete</h3>
+    <code>http://localhost:5000/delete?id=165</code>
+    <p>
+      Make a delete request to the /delete endpoint with the id as a parameter
+    </p>
+    <br />
+    <hr />
+    <br />
+    <footer style="width: 100vw; text-align: center">
+      © {{year}} <i>db</i>eidle Designs
+    </footer>
+  </body>
+</html>
