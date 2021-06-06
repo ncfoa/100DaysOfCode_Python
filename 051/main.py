@@ -37,7 +37,7 @@ class AutomatedPost:
         sleep(1)
         driver.find_element_by_name("login").click()
         sleep(3)
-        driver.find_element_by_link_text("Not Now").click()
+        driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div/div[1]/div/div/div[3]/div[1]/div/div/a').click()
         sleep(2)
         driver.find_element_by_xpath('/html/body/div[1]/div/div[4]/div/div[1]/div[3]/div/div/div[1]/div[2]').click()
         sleep(3)
