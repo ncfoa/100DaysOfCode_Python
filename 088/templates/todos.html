@@ -1,0 +1,48 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{ super() }}
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+
+
+{% block title %}All Todos{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>All Todos</h1>
+
+	  <table class="table">
+		  <tr><th>Todo</th><th>Due Date</th></tr>
+	  {% for item in todos %}
+
+	  <tr >
+		<td class="{{item['todo']}}">{{ item["todo"] }}</td>
+		<td class="{{item['todo']}}">{{ item["due date"]}}</td>
+		  <td><button class="btn" onclick="markComplete('{{item['todo']}}')">Mark Complete</button></td>
+
+	  </tr>
+	  {% endfor %}
+  	  </table>
+      <p><a href="{{ url_for('home') }}">Return to index page</a></p>
+<script>
+
+function markComplete(id) {
+	console.log(id)
+	var x = document.getElementsByClassName(id);
+	var i;
+	for (i = 0; i < x.length; i++) {
+  x[i].classList.toggle("complete");
+ }
+}
+</script>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
